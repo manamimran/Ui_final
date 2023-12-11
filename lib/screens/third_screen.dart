@@ -39,15 +39,15 @@ class ThirdScreen extends StatelessWidget {
         body: Container(
           child: Column(
             children: [
-              detail_card(),
-              custom_list(),
+              DetailWidget(),
+              CustomList(),
             ],
             //custom widget to show list named as CustomList
           ),
         ));
   }
 
-  Widget custom_list() {
+  Widget CustomList() {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: Column(
@@ -76,7 +76,7 @@ class ThirdScreen extends StatelessWidget {
               children: [
                 Column(
                   children: [
-                    custom_row(
+                    CustomRow2(
                         'SEP 2022'), //custom widget for another row named as Custom Row2
                   ],
                 ),
@@ -93,7 +93,7 @@ class ThirdScreen extends StatelessWidget {
               children: [
                 Column(
                   children: [
-                    custom_row(
+                    CustomRow2(
                         'AUG 2022'), //custom widget for another row named as Custom Row2
                   ],
                 ),
@@ -110,7 +110,7 @@ class ThirdScreen extends StatelessWidget {
               children: [
                 Column(
                   children: [
-                    custom_row(
+                    CustomRow2(
                         'JUL 2022'), //custom widget for another row named as Custom Row2
                   ],
                 ),
@@ -127,7 +127,7 @@ class ThirdScreen extends StatelessWidget {
               children: [
                 Column(
                   children: [
-                    custom_row(
+                    CustomRow2(
                         'JUN 2022'), //custom widget for another row named as Custom Row2
                   ],
                 ),
@@ -144,7 +144,7 @@ class ThirdScreen extends StatelessWidget {
               children: [
                 Column(
                   children: [
-                    custom_row(
+                    CustomRow2(
                         'MAY 2022'), //custom widget for another row named as Custom Row2
                   ],
                 ),
@@ -161,7 +161,7 @@ class ThirdScreen extends StatelessWidget {
               children: [
                 Column(
                   children: [
-                    custom_row(
+                    CustomRow2(
                         'APR 2022'), //custom widget for another row named as Custom Row2
                   ],
                 ),
@@ -178,7 +178,7 @@ class ThirdScreen extends StatelessWidget {
     );
   }
 
-  Widget detail_card() {
+  Widget DetailWidget() {
     return Container(
       padding: EdgeInsets.all(20),
       decoration: BoxDecoration(
@@ -317,7 +317,7 @@ class ThirdScreen extends StatelessWidget {
     );
   }
 
-  Widget custom_row(String txt) {
+  Widget CustomRow2(String txt) {
     return Container(
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,

@@ -65,16 +65,16 @@ class _SecondScreenState extends State<SecondScreen> {
             SizedBox(height: 20),
             Column(
               children: [
-                option_card(
+                CustomWidget(
                     //add a custom WIdget named as OptionCard
                     "Christmas", "Goal:", '\$3000', "Duration",
                     "6 months", "Monthly Deposit", '\$500',
                     25),
                 SizedBox(height: 8),
-                option_card("Christmas", "Goal:", '\$3000', "Duration", "6 months",
+                CustomWidget("Christmas", "Goal:", '\$3000', "Duration", "6 months",
                     "Monthly Deposit", '\$500', 25),
                 SizedBox(height: 8),
-                option_card("Car Repair", "Goal:", '\$3000', "Duration",
+                CustomWidget("Car Repair", "Goal:", '\$3000', "Duration",
                     "6 months", "Monthly Deposit", '\$500', 25),
               ],
             )
@@ -84,7 +84,7 @@ class _SecondScreenState extends State<SecondScreen> {
     );
   }
 
-  Widget option_card(String labelText, String txt1, String txt2, String txt3,
+  Widget CustomWidget(String labelText, String txt1, String txt2, String txt3,
       String txt4, String txt5, String txt6, double fontsize) {
     return Container(
       padding: EdgeInsets.all(10),

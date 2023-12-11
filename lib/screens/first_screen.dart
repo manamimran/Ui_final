@@ -4,13 +4,12 @@ import 'package:flutter/material.dart';
 import 'package:ui_final/model_class.dart';
 import 'package:ui_final/screens/second_screen.dart';
 import 'package:ui_final/utils/app_fonts.dart';
-import 'package:ui_final/widgets/card1.dart';
-import 'package:ui_final/widgets/card2.dart';
-import 'package:ui_final/widgets/card_button.dart';
+import 'package:ui_final/widgets/textfield1.dart';
+import 'package:ui_final/widgets/textfield2.dart';
+import 'package:ui_final/widgets/buttonfield.dart';
 
 class FirstScreen extends StatefulWidget {
-  // FirstScreen({required this.modelClass});
-  // late ModelClass modelClass;
+
 
   @override
   State<FirstScreen> createState() => _FirstScreenState();
@@ -76,14 +75,14 @@ class _FirstScreenState extends State<FirstScreen> {
               Row(
                 children: [
                   Expanded(
-                    child: Card1(
+                    child: TextField1(
                       textEditingController: first_controller,
                       labelText: "First name",
                     ),
                   ),
                   SizedBox(width: 10),
                   Expanded(
-                    child: Card1(
+                    child: TextField1(
                       textEditingController: last_controller,
                       labelText: "Last name",
                     ),
@@ -91,27 +90,27 @@ class _FirstScreenState extends State<FirstScreen> {
                 ],
               ),
               SizedBox(height: 10),
-              Card2(
+              TextField2(
                   textEditingController: email_controller,
                   obscureText: false,
                   labelText: "Email"),
               SizedBox(height: 10),
-              Card2(
+              TextField2(
                   textEditingController: phone_controller,
                   obscureText: false,
                   labelText: 'Phone'),
               SizedBox(height: 10),
-              Card2(
+              TextField2(
                   textEditingController: pass_controller,
                   obscureText: true,
                   labelText: "Password"),
               SizedBox(height: 10),
-              Card2(
+              TextField2(
                   textEditingController: confirm_pass_controller,
                   obscureText: true,
                   labelText: "Confirm Password"),
               SizedBox(height: 10),
-              CardButton(
+              ButtonField(
                 labelText: "Sign Up",
                 onPressed: () async {
 

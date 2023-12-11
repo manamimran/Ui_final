@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class Card1 extends StatelessWidget{
-  Card1({required this.labelText, required this.textEditingController});
+class TextField1 extends StatelessWidget{
+  TextField1({required this.labelText, required this.textEditingController});
   final String labelText;
   Color myColor = Color(0xFF292929);
   TextEditingController textEditingController = TextEditingController();

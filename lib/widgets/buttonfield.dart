@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:ui_final/model_class.dart';
 import 'package:ui_final/screens/second_screen.dart';
 import 'package:ui_final/utils/app_colors.dart';
+import 'package:ui_final/utils/app_fonts.dart';
 
-class CardButton extends StatelessWidget {
-  CardButton({required this.labelText, required this.onPressed});
+class ButtonField extends StatelessWidget {
+  ButtonField({required this.labelText, required this.onPressed});
   final String labelText;
   void Function()? onPressed;
 
@@ -22,10 +23,10 @@ class CardButton extends StatelessWidget {
           child: Center(
             child: Text(
               labelText,
-              style: TextStyle(
+             style:AppFont.popins( style: TextStyle(
                 color: Colors.white, // Set the text color here
               ),
-            ),
+             )),
           ),
         ),
       ),

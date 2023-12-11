@@ -4,9 +4,9 @@ import 'package:ui_final/utils/app_fonts.dart';
 
 import '../utils/app_colors.dart';
 
-class Card2 extends StatelessWidget{
+class TextField2 extends StatelessWidget{
   // Color myColor = Color(0xFF292929);
-  Card2({required this.labelText, required this.textEditingController, required this.obscureText});
+  TextField2({required this.labelText, required this.textEditingController, required this.obscureText});
   final String labelText;
   final bool obscureText;
   TextEditingController textEditingController = TextEditingController();
@@ -30,7 +30,6 @@ class Card2 extends StatelessWidget{
             controller: textEditingController,
            style:AppFont.popins( style: TextStyle(color: Colors.grey)),
             decoration: InputDecoration(
-
               border: InputBorder.none, // Remove the underline
               hintText: labelText, // Optional: Provide a hint text
               hintStyle: TextStyle(color: Colors.grey.withOpacity(0.6)), // Optional: Style for the hint text
